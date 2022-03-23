@@ -1,0 +1,53 @@
+/* Mutual Global Styling */
+.bg-custom {
+    background-color: #a4c3fa;
+}
+
+.nav-link {
+    color: #252424;
+    padding: 0.5rem 0.8rem;
+}
+
+.header-group-right{
+    display: flex;
+}
+
+/* Sidebar */
+
+#sidebar{
+    padding: 0.5rem 1rem;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+}
+
+.navbar-btn .line {
+    width: 80%;
+    height: 2px;
+    background-color: #252424;
+    display: block;
+    margin: 6px auto;
+   transition: all 0.3s ease-in-out;
+   border-radius: 1px;
+}
+
+.navbar-btn:hover{
+    cursor: pointer;
+}
+
+#sidebarCollapse.is-active .line:nth-child(2){
+    opacity: 0;
+}
+
+#sidebarCollapse.is-active .line:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+  
+  #sidebarCollapse.is-active .line:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
